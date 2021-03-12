@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BB0C3F5-B46B-493A-A291-2990FFCD748C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Charmie</RootNamespace>
+    <AssemblyName>Charmie</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="contact.html" />
+    <Content Include="dummy\figure-1%402x.jpg" />
+    <Content Include="dummy\figure-1.jpg" />
+    <Content Include="dummy\foto1.jpg" />
+    <Content Include="dummy\foto2.jpg" />
+    <Content Include="dummy\foto3.jpg" />
+    <Content Include="dummy\gallery-1%402x.jpg" />
+    <Content Include="dummy\gallery-1.jpg" />
+    <Content Include="dummy\gallery-10%402x.jpg" />
+    <Content Include="dummy\gallery-10.jpg" />
+    <Content Include="dummy\gallery-11%402x.jpg" />
+    <Content Include="dummy\gallery-11.jpg" />
+    <Content Include="dummy\gallery-12%402x.jpg" />
+    <Content Include="dummy\gallery-12.jpg" />
+    <Content Include="dummy\gallery-2%402x.jpg" />
+    <Content Include="dummy\gallery-2.jpg" />
+    <Content Include="dummy\gallery-3%402x.jpg" />
+    <Content Include="dummy\gallery-3.jpg" />
+    <Content Include="dummy\gallery-4%402x.jpg" />
+    <Content Include="dummy\gallery-4.jpg" />
+    <Content Include="dummy\gallery-5%402x.jpg" />
+    <Content Include="dummy\gallery-5.jpg" />
+    <Content Include="dummy\gallery-6%402x.jpg" />
+    <Content Include="dummy\gallery-6.jpg" />
+    <Content Include="dummy\gallery-7%402x.jpg" />
+    <Content Include="dummy\gallery-7.jpg" />
+    <Content Include="dummy\gallery-8%402x.jpg" />
+    <Content Include="dummy\gallery-8.jpg" />
+    <Content Include="dummy\gallery-9%402x.jpg" />
+    <Content Include="dummy\gallery-9.jpg" />
+    <Content Include="dummy\large-gallery\gallery-1.jpg" />
+    <Content Include="dummy\large-gallery\gallery-10.jpg" />
+    <Content Include="dummy\large-gallery\gallery-11.jpg" />
+    <Content Include="dummy\large-gallery\gallery-12.jpg" />
+    <Content Include="dummy\large-gallery\gallery-2.jpg" />
+    <Content Include="dummy\large-gallery\gallery-3.jpg" />
+    <Content Include="dummy\large-gallery\gallery-4.jpg" />
+    <Content Include="dummy\large-gallery\gallery-5.jpg" />
+    <Content Include="dummy\large-gallery\gallery-6.jpg" />
+    <Content Include="dummy\large-gallery\gallery-7.jpg" />
+    <Content Include="dummy\large-gallery\gallery-8.jpg" />
+    <Content Include="dummy\large-gallery\gallery-9.jpg" />
+    <Content Include="dummy\person-1%402x.jpg" />
+    <Content Include="dummy\person-1.jpg" />
+    <Content Include="dummy\person-2%402x.jpg" />
+    <Content Include="dummy\person-2.jpg" />
+    <Content Include="dummy\person-3%402x.jpg" />
+    <Content Include="dummy\person-3.jpg" />
+    <Content Include="dummy\person-4%402x.jpg" />
+    <Content Include="dummy\person-4.jpg" />
+    <Content Include="dummy\slider-1%402x.jpg" />
+    <Content Include="dummy\slider-1.jpg" />
+    <Content Include="dummy\slider-2%402x.jpg" />
+    <Content Include="dummy\slider-2.jpg" />
+    <Content Include="dummy\slider-3%402x.jpg" />
+    <Content Include="dummy\slider-3.jpg" />
+    <Content Include="fonts\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\novecento-font\Licenses\Synthview Type Design - Webfont License 1.0.0.txt" />
+    <Content Include="fonts\novecento-font\novecento-font.css" />
+    <Content Include="fonts\novecento-font\Novecentosanswide-Bold-webfont.svg" />
+    <Content Include="fonts\novecento-font\Novecentosanswide-Book-webfont.svg" />
+    <Content Include="fonts\novecento-font\Novecentosanswide-DemiBold-webfont.svg" />
+    <Content Include="fonts\novecento-font\Novecentosanswide-Light-webfont.svg" />
+    <Content Include="fonts\novecento-font\Novecentosanswide-Medium-webfont.svg" />
+    <Content Include="fonts\novecento-font\Novecentosanswide-Normal-webfont.svg" />
+    <Content Include="foto1.jpeg" />
+    <Content Include="foto2.jpeg" />
+    <Content Include="foto3.jpeg" />
+    <Content Include="gallery.html" />
+    <Content Include="images\arrow%402x.png" />
+    <Content Include="images\arrow.png" />
+    <Content Include="images\icon-1%402x.png" />
+    <Content Include="images\icon-1.png" />
+    <Content Include="images\icon-2%402x.png" />
+    <Content Include="images\icon-2.png" />
+    <Content Include="images\icon-3%402x.png" />
+    <Content Include="images\icon-3.png" />
+    <Content Include="images\icon-4%402x.png" />
+    <Content Include="images\icon-4.png" />
+    <Content Include="images\icon-5%402x.png" />
+    <Content Include="images\icon-5.png" />
+    <Content Include="images\icon-6%402x.png" />
+    <Content Include="images\icon-6.png" />
+    <Content Include="images\icon-7%402x.png" />
+    <Content Include="images\icon-7.png" />
+    <Content Include="images\icon-8%402x.png" />
+    <Content Include="images\icon-8.png" />
+    <Content Include="images\icon-contact-envelope%402x.png" />
+    <Content Include="images\icon-contact-envelope.png" />
+    <Content Include="images\icon-contact-globe%402x.png" />
+    <Content Include="images\icon-contact-globe.png" />
+    <Content Include="images\icon-contact-pencil%402x.png" />
+    <Content Include="images\icon-contact-pencil.png" />
+    <Content Include="images\icon-contact-user%402x.png" />
+    <Content Include="images\icon-contact-user.png" />
+    <Content Include="images\icon-envelope-small%402x.png" />
+    <Content Include="images\icon-envelope-small.png" />
+    <Content Include="images\icon-map-small%402x.png" />
+    <Content Include="images\icon-map-small.png" />
+    <Content Include="images\icon-phone-small%402x.png" />
+    <Content Include="images\icon-phone-small.png" />
+    <Content Include="images\logo%402x.png" />
+    <Content Include="images\Logo.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\Logo2.png" />
+    <Content Include="images\paging%402x.png" />
+    <Content Include="images\paging.png" />
+    <Content Include="index.html" />
+    <Content Include="js\app.js" />
+    <Content Include="js\ie-support\html5.js" />
+    <Content Include="js\ie-support\pie.htc" />
+    <Content Include="js\ie-support\respond.js" />
+    <Content Include="js\jquery-1.11.1.min.js" />
+    <Content Include="js\min\app-min.js" />
+    <Content Include="js\min\plugins-min.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="service.html" />
+    <Content Include="style.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="__MACOSX\._about.html" />
+    <Content Include="__MACOSX\._contact.html" />
+    <Content Include="__MACOSX\._gallery.html" />
+    <Content Include="__MACOSX\._index.html" />
+    <Content Include="__MACOSX\._service.html" />
+    <Content Include="__MACOSX\._style.css" />
+    <Content Include="__MACOSX\dummy\._figure-1%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._figure-1.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-1%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-1.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-10%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-10.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-11%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-11.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-12%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-12.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-2%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-2.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-3%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-3.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-4%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-4.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-5%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-5.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-6%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-6.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-7%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-7.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-8%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-8.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-9%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._gallery-9.jpg" />
+    <Content Include="__MACOSX\dummy\._person-1%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._person-1.jpg" />
+    <Content Include="__MACOSX\dummy\._person-2%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._person-2.jpg" />
+    <Content Include="__MACOSX\dummy\._person-3%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._person-3.jpg" />
+    <Content Include="__MACOSX\dummy\._person-4%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._person-4.jpg" />
+    <Content Include="__MACOSX\dummy\._slider-1%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._slider-1.jpg" />
+    <Content Include="__MACOSX\dummy\._slider-2%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._slider-2.jpg" />
+    <Content Include="__MACOSX\dummy\._slider-3%402x.jpg" />
+    <Content Include="__MACOSX\dummy\._slider-3.jpg" />
+    <Content Include="__MACOSX\dummy\large-gallery\._gallery-1.jpg" />
+    <Content Include="__MACOSX\dummy\large-gallery\._gallery-10.jpg" />
+    <Content Include="__MACOSX\dummy\large-gallery\._gallery-11.jpg" />
+    <Content Include="__MACOSX\dummy\large-gallery\._gallery-12.jpg" />
+    <Content Include="__MACOSX\dummy\large-gallery\._gallery-2.jpg" />
+    <Content Include="__MACOSX\dummy\large-gallery\._gallery-3.jpg" />
+    <Content Include="__MACOSX\dummy\large-gallery\._gallery-4.jpg" />
+    <Content Include="__MACOSX\dummy\large-gallery\._gallery-5.jpg" />
+    <Content Include="__MACOSX\dummy\large-gallery\._gallery-6.jpg" />
+    <Content Include="__MACOSX\dummy\large-gallery\._gallery-7.jpg" />
+    <Content Include="__MACOSX\dummy\large-gallery\._gallery-8.jpg" />
+    <Content Include="__MACOSX\dummy\large-gallery\._gallery-9.jpg" />
+    <Content Include="__MACOSX\fonts\._font-awesome.min.css" />
+    <Content Include="__MACOSX\fonts\._fontawesome-webfont.svg" />
+    <Content Include="__MACOSX\fonts\novecento-font\._novecento-font.css" />
+    <Content Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Bold-webfont.svg" />
+    <Content Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Book-webfont.svg" />
+    <Content Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-DemiBold-webfont.svg" />
+    <Content Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Light-webfont.svg" />
+    <Content Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Medium-webfont.svg" />
+    <Content Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Normal-webfont.svg" />
+    <Content Include="__MACOSX\fonts\novecento-font\Licenses\._Synthview Type Design - Webfont License 1.0.0.txt" />
+    <Content Include="__MACOSX\images\._arrow%402x.png" />
+    <Content Include="__MACOSX\images\._arrow.png" />
+    <Content Include="__MACOSX\images\._icon-1%402x.png" />
+    <Content Include="__MACOSX\images\._icon-1.png" />
+    <Content Include="__MACOSX\images\._icon-2%402x.png" />
+    <Content Include="__MACOSX\images\._icon-2.png" />
+    <Content Include="__MACOSX\images\._icon-3%402x.png" />
+    <Content Include="__MACOSX\images\._icon-3.png" />
+    <Content Include="__MACOSX\images\._icon-4%402x.png" />
+    <Content Include="__MACOSX\images\._icon-4.png" />
+    <Content Include="__MACOSX\images\._icon-5%402x.png" />
+    <Content Include="__MACOSX\images\._icon-5.png" />
+    <Content Include="__MACOSX\images\._icon-6%402x.png" />
+    <Content Include="__MACOSX\images\._icon-6.png" />
+    <Content Include="__MACOSX\images\._icon-7%402x.png" />
+    <Content Include="__MACOSX\images\._icon-7.png" />
+    <Content Include="__MACOSX\images\._icon-8%402x.png" />
+    <Content Include="__MACOSX\images\._icon-8.png" />
+    <Content Include="__MACOSX\images\._icon-contact-envelope%402x.png" />
+    <Content Include="__MACOSX\images\._icon-contact-envelope.png" />
+    <Content Include="__MACOSX\images\._icon-contact-globe%402x.png" />
+    <Content Include="__MACOSX\images\._icon-contact-globe.png" />
+    <Content Include="__MACOSX\images\._icon-contact-pencil%402x.png" />
+    <Content Include="__MACOSX\images\._icon-contact-pencil.png" />
+    <Content Include="__MACOSX\images\._icon-contact-user%402x.png" />
+    <Content Include="__MACOSX\images\._icon-contact-user.png" />
+    <Content Include="__MACOSX\images\._icon-envelope-small%402x.png" />
+    <Content Include="__MACOSX\images\._icon-envelope-small.png" />
+    <Content Include="__MACOSX\images\._icon-map-small%402x.png" />
+    <Content Include="__MACOSX\images\._icon-map-small.png" />
+    <Content Include="__MACOSX\images\._icon-phone-small%402x.png" />
+    <Content Include="__MACOSX\images\._icon-phone-small.png" />
+    <Content Include="__MACOSX\images\._logo%402x.png" />
+    <Content Include="__MACOSX\images\._logo.png" />
+    <Content Include="__MACOSX\images\._paging%402x.png" />
+    <Content Include="__MACOSX\images\._paging.png" />
+    <Content Include="__MACOSX\js\._app.js" />
+    <Content Include="__MACOSX\js\._jquery-1.11.1.min.js" />
+    <Content Include="__MACOSX\js\._plugins.js" />
+    <Content Include="__MACOSX\js\ie-support\._html5.js" />
+    <Content Include="__MACOSX\js\ie-support\._pie.htc" />
+    <Content Include="__MACOSX\js\ie-support\._respond.js" />
+    <Content Include="__MACOSX\js\min\._app-min.js" />
+    <Content Include="__MACOSX\js\min\._plugins-min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="sass\pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fonts\fontawesome-webfont.eot" />
+    <None Include="fonts\fontawesome-webfont.ttf" />
+    <None Include="fonts\fontawesome-webfont.woff" />
+    <None Include="fonts\FontAwesome.otf" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Bold-webfont.eot" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Bold-webfont.ttf" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Bold-webfont.woff" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Bold-webfont.woff2" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Book-webfont.eot" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Book-webfont.ttf" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Book-webfont.woff" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Book-webfont.woff2" />
+    <None Include="fonts\novecento-font\Novecentosanswide-DemiBold-webfont.eot" />
+    <None Include="fonts\novecento-font\Novecentosanswide-DemiBold-webfont.ttf" />
+    <None Include="fonts\novecento-font\Novecentosanswide-DemiBold-webfont.woff" />
+    <None Include="fonts\novecento-font\Novecentosanswide-DemiBold-webfont.woff2" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Light-webfont.eot" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Light-webfont.ttf" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Light-webfont.woff" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Light-webfont.woff2" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Medium-webfont.eot" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Medium-webfont.ttf" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Medium-webfont.woff" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Medium-webfont.woff2" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Normal-webfont.eot" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Normal-webfont.ttf" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Normal-webfont.woff" />
+    <None Include="fonts\novecento-font\Novecentosanswide-Normal-webfont.woff2" />
+    <None Include="js\jquery-1.11.1.min.map" />
+    <None Include="sass\layout\_content.scss" />
+    <None Include="sass\layout\_footer.scss" />
+    <None Include="sass\layout\_header.scss" />
+    <None Include="sass\libs\bootstrap-grid\_grid.scss" />
+    <None Include="sass\libs\bootstrap-grid\_mixins.scss" />
+    <None Include="sass\libs\bootstrap-grid\_settings.scss" />
+    <None Include="sass\libs\_components.scss" />
+    <None Include="sass\libs\_global.scss" />
+    <None Include="sass\libs\_lightbox.scss" />
+    <None Include="sass\libs\_mixins.scss" />
+    <None Include="sass\libs\_normalize.scss" />
+    <None Include="sass\libs\_settings.scss" />
+    <None Include="sass\style.scss" />
+    <None Include="__MACOSX\._dummy" />
+    <None Include="__MACOSX\._fonts" />
+    <None Include="__MACOSX\._images" />
+    <None Include="__MACOSX\._js" />
+    <None Include="__MACOSX\._sass" />
+    <None Include="__MACOSX\dummy\._large-gallery" />
+    <None Include="__MACOSX\fonts\._fontawesome-webfont.eot" />
+    <None Include="__MACOSX\fonts\._fontawesome-webfont.ttf" />
+    <None Include="__MACOSX\fonts\._fontawesome-webfont.woff" />
+    <None Include="__MACOSX\fonts\._FontAwesome.otf" />
+    <None Include="__MACOSX\fonts\._novecento-font" />
+    <None Include="__MACOSX\fonts\novecento-font\._Licenses" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Bold-webfont.eot" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Bold-webfont.ttf" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Bold-webfont.woff" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Bold-webfont.woff2" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Book-webfont.eot" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Book-webfont.ttf" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Book-webfont.woff" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Book-webfont.woff2" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-DemiBold-webfont.eot" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-DemiBold-webfont.ttf" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-DemiBold-webfont.woff" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-DemiBold-webfont.woff2" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Light-webfont.eot" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Light-webfont.ttf" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Light-webfont.woff" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Light-webfont.woff2" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Medium-webfont.eot" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Medium-webfont.ttf" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Medium-webfont.woff" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Medium-webfont.woff2" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Normal-webfont.eot" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Normal-webfont.ttf" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Normal-webfont.woff" />
+    <None Include="__MACOSX\fonts\novecento-font\._Novecentosanswide-Normal-webfont.woff2" />
+    <None Include="__MACOSX\js\._ie-support" />
+    <None Include="__MACOSX\js\._jquery-1.11.1.min.map" />
+    <None Include="__MACOSX\js\._min" />
+    <None Include="__MACOSX\sass\._layout" />
+    <None Include="__MACOSX\sass\._libs" />
+    <None Include="__MACOSX\sass\._pages" />
+    <None Include="__MACOSX\sass\._style.scss" />
+    <None Include="__MACOSX\sass\layout\.__content.scss" />
+    <None Include="__MACOSX\sass\layout\.__footer.scss" />
+    <None Include="__MACOSX\sass\layout\.__header.scss" />
+    <None Include="__MACOSX\sass\libs\._bootstrap-grid" />
+    <None Include="__MACOSX\sass\libs\.__components.scss" />
+    <None Include="__MACOSX\sass\libs\.__global.scss" />
+    <None Include="__MACOSX\sass\libs\.__lightbox.scss" />
+    <None Include="__MACOSX\sass\libs\.__mixins.scss" />
+    <None Include="__MACOSX\sass\libs\.__normalize.scss" />
+    <None Include="__MACOSX\sass\libs\.__settings.scss" />
+    <None Include="__MACOSX\sass\libs\bootstrap-grid\.__grid.scss" />
+    <None Include="__MACOSX\sass\libs\bootstrap-grid\.__mixins.scss" />
+    <None Include="__MACOSX\sass\libs\bootstrap-grid\.__settings.scss" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65333</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

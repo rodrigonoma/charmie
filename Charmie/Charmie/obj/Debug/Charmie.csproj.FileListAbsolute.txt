@@ -1,0 +1,4 @@
+C:\Workspace\Charmie\Charmie\Charmie\bin\Charmie.dll
+C:\Workspace\Charmie\Charmie\Charmie\bin\Charmie.pdb
+C:\Workspace\Charmie\Charmie\Charmie\obj\Debug\Charmie.dll
+C:\Workspace\Charmie\Charmie\Charmie\obj\Debug\Charmie.pdb
